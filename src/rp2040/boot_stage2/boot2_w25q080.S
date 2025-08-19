@@ -100,6 +100,8 @@ pico_default_asm_setup
 regular_func _stage2_boot
     push {lr}
 
+    bkpt #0
+
     // Set pad configuration:
     // - SCLK 8mA drive, no slew limiting
     // - SDx disable input Schmitt to reduce delay
